@@ -1,0 +1,273 @@
+:root {
+    --padding: 30px;
+    --button-padding: 10px;
+    --header-background: rgba(117, 185, 244, 1);
+    --button-color: rgba(247, 60, 107, 1);
+    --font-family: Muli;
+    --color: rgba(115, 123, 125, 1);
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+}
+
+/*Header*/
+header {
+
+    background-color: var(--header-background);
+
+}
+
+.header-icons {
+    display: flex;
+}
+
+.header .fa-bars {
+    display: none;
+}
+
+.header-menu-list ul {
+
+    list-style-type: none;
+
+}
+
+
+.header-menu-list ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: rgba(55, 63, 65, 1);
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+button {
+    cursor: pointer;
+
+}
+
+.header-icons .login {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text);
+    color: rgba(60, 100, 177, 1);
+}
+
+.header-icons .signup {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: var(--button-padding);
+    background: var(--button-color);
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text);
+    color: white;
+    border-radius: 10px;
+}
+
+.login {
+    color: black;
+}
+
+
+
+.header-menu-list ul li a:hover {
+    color:rgba(60, 100, 177, 1);
+
+}
+
+/*Scratch*/
+.scratch-section {
+    background-color: var(--header-background);
+
+
+}
+
+.scratch-image {
+    padding-bottom: 0px;
+    object-fit: cover;
+
+
+}
+
+.scratch-section .scratch-text {
+    overflow: hidden;
+}
+
+.scratch-section .scratch-text p {
+    color: var(--color);
+    text-align: justify;
+}
+
+.scratch-section .contact-button {
+    text-decoration: none;
+    border: 1px solid var(--button-color);
+    color: var(--button-color);
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/*Minimum Elitr*/
+.minimum-elitr{
+    position: relative;
+}
+.minimum-texts{
+    padding: 100px 0px 70px 0px;
+}
+.minimum-texts p:nth-child(1){
+    background-color: blue;
+    color:white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.minimum-texts p:nth-child(3),.minimum-texts p:nth-child(5){
+
+    padding: 20px;
+    border-radius: 10px;
+}
+#doodle-3{
+    position: absolute;
+    left:0%;
+    top:-3%;
+}
+
+/*Shipping Section*/
+
+.shipping-section {
+    position: relative;
+    background: rgba(255, 189, 109, 1);
+
+    overflow: hidden;
+}
+
+#doodle-4 {
+    position: absolute;
+    left: 0%;
+    
+
+
+}
+
+/*Mini-Card-Section*/
+.mini-card-section {
+    position: relative;
+    color: #120d1c;
+}
+
+#saly-3 {
+    position: absolute;
+    left: 25%;
+    bottom: 20%;
+    
+   
+}
+
+
+/*Subscribe-Section*/
+.subscribe-section{
+    background: rgba(46, 213, 115, 0.5);
+
+    
+}
+.subscribe-form{
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+}
+.subscribe-form h2{
+    color: rgba(79, 79, 79, 1);
+
+    
+}
+
+.subscribe-form #subscribe-button{
+    background: rgba(247, 60, 107, 1);
+    color:white;
+    
+}
+
+
+/*Footer-Section*/
+.footer-section{
+    background: rgba(255, 210, 129, 1);
+    color:rgba(85, 85, 85, 1);
+}
+#places{
+   color: black;
+   font-weight: 600;
+    width:100%;
+      
+}
+#doodle-6{
+z-index: 999;
+}
+#doodle-7{
+    position: absolute;
+    bottom:70%;
+    right: 0%;
+}
+.footr-card ul{
+    list-style-type: none;
+    
+
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    .shipping-section {
+        text-align: justify;
+
+    }
+
+    #doodle-4 {
+        display: none;
+
+    }
+    #saly-3{
+        display: none;
+    }
+  .d-sm-none{
+    display: none;
+  }
+ 
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    #saly-3 {
+         width:35%;
+        left: 65%;
+        bottom: 50%;
+    }
+    .minimum-elitr .minimum-texts{
+        padding: 70px 0px 0px 0px;
+    }
+    
+
+}
